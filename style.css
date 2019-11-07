@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+.banner{
+  background: url('bgimg.jpeg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerText{
+  text-align: center;
+  color: #fff;
+}
+#bannerBrand{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  text-shadow: 3px 6px #E71C23;
+  text-decoration: none;
+  /* background: #333; */
+  padding: 8px 16px;
+}
+.bannerText h1{
+  font-size: 48px;
+  text-shadow: 3px 6px #E71C23;
+}
+/* #bannerBtn{
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  background: #333;
+  padding: 7px 14px;
+} */
+
+/* About section */
+.about{
+  padding: 24px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.aboutHead{
+  text-align: center;
+}
+.aboutHead h2{
+  font-size: 32px;
+}
+.aboutText{
+  margin-top: 24px;
+}
+.aboutText .boxes{
+  display: flex;
+  flex-direction: row;
+}
+.aboutText .box{
+  width: 50%;
+  margin: auto;
+  height: 320px;
+}
+
+/* .aboutText strong{
+  color: #E71C23;
+  text-shadow: 0.5px 1px #000000;
+  text-shadow: 0.5px 1px #E71C23;
+} */
+.aboutText strong{
+  text-decoration: underline;
+}
+.aboutText .text a{
+  background-color: #E71C23;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.img{
+  background-color: red;
+  background: url('aboutimg.jpeg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sectionTwo .boxes{
+  display: flex;
+  width: 95%;
+  padding: 24px 0;
+  margin: auto;
+  overflow: hidden;
+  flex-direction: row;
+}
+.sectionTwo .box{
+  width: 22.5%;
+  text-align: center;
+  margin: 24px;
+}
+.sectionTwo .card p{
+  text-align: left;
+  margin: 8px 16px;
+}
+.sectionTwoHead{
+  text-align: center;
+}
+.sectionTwoHead h2{
+  font-size: 32px;
+}
+.sectionThree{
+  padding: 24px;
+}
+.articleHead{
+  text-align: center;
+}
+.articleHead h2{
+  font-size: 32px;
+}
+.sectionThree .boxes{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.sectionThree .articleOne{
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+}
+.sectionThree .article-i-text{
+  width: 75%;
+}
+.article-i-text a{
+  margin: 0 0 0 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.article-i-text a:hover{
+  margin: 0 0 0 24px;
+  color: #E71C23;
+  text-decoration: none;
+}
+/* .sectionFour {
+  margin: auto;
+  overflow: hidden;
+  background: #333;
+  padding: 24px;
+} */
+
+.subscribeHead{
+  text-align: center;
+}
+.subscribeHead h2{
+  font-size: 32px;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe form{
+  text-align: center;
+}
+.subscribe form #email{
+  padding: 8px 16px;
+  margin: 8px 0;
+}
+.subscribe #submitBtn{
+  padding: 8px 16px;
+  margin: 8px 0;
+}
+
+
+footer{
+  padding: 16px;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+
+/* responsive */

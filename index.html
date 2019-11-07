@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Salman-parkar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
+
+  </head>
+  <body>
+    <div class="banner">
+      <div class="bannerText">
+        <a href="#" id="bannerBrand">Salman Parkar</a>
+        <br>
+        <br>
+        <h1>Web developer & Social media specialist</h1>
+        <!-- <br>
+        <a href="#" id="bannerBtn">Know More</a> -->
+      </div>
+    </div>
+
+    <div id="first-section">
+      <div class="about">
+        <div class="aboutHead">
+          <h2>About</h2>
+        </div>
+        <div class="aboutText">
+          <div class="boxes">
+            <div class="box text" id="revealLeft">
+              <p>I’m a web developer and social media specialist from India having degree in <strong>INFORMATION TECHNOLOGY</strong> with 3+ years of experience.<br>
+              I’m extremely passionate about web development and design in all it’s forms and helping small businesses and artisans build and improve their online presence.<br>
+              I'm well versed with the web technologies like <strong>HTML5, CSS3, JAVASCRIPT</strong> and <strong>BOOTSTRAP</strong>.<br>
+              I have a experience working with <strong>ANGULAR</strong> and <strong>REACT</strong>.<br>
+              For the backend, i use <strong>FIREBASE</strong>.<br>
+              I have a good understanding of <strong>SEO</strong> and web traffic metrics and knowledge of <strong>GOOGLE ADWORDS</strong> for running campaigns.<br>
+            </p>
+              <br>
+              <a href="#">Salman parkar</a>
+            </div>
+            <div class="box img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionTwo">
+      <div class="sectionTwoHead">
+        <h2>What i do???</h2>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <div class="card">
+            <div class="cardImg" id="cardOne">
+              <img src="data.png" alt="" width="50%">
+            </div>
+            <h3>Web development</h3>
+            <p>Designing and developing customized and responsive new age webpages that look attractive on both big and small screen.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="card">
+            <div class="cardImg" id="cardOne">
+              <img src="seo.png" alt="" width="50%">
+            </div>
+            <h3>SEO</h3>
+            <p>Keywords planning to use in the content that attract more traffic to the websites and improve the ranking of the website in google search.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="card">
+            <div class="cardImg" id="cardOne">
+              <img src="digital-campaign.png" alt="" width="50%">
+            </div>
+            <h3>Digital marketing</h3>
+            <p>Creating and launching the social media ad campaigns with google AdWords and other social media platform to promote a service or product.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="card">
+            <div class="cardImg" id="cardOne">
+              <img src="empty-cart.png" alt="" width="50%">
+            </div>
+            <h3>E-commerce</h3>
+            <p>Developing and managing a shopping website that includes fully functioning shopping card and integrating payment gateway</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionThree">
+      <div class="articles">
+        <div class="articleHead">
+          <h2>Articles</h2>
+        </div>
+        <div class="articleOne">
+          <div class="boxes">
+            <div class="box article-i-text">
+              <a href="0">Learn Web Development</a>
+              <!-- <p>Learn Web Development<span><a href="">Read</a></span></p> -->
+            </div>
+            <div class="box article-i-img">
+              <!-- <img src="data.png" alt="" height="25px" width="25px"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionFour">
+      <div class="subscribe">
+        <div class="subscribeHead">
+          <h2>Subscribe</h2>
+        </div>
+        <form id="submitForm">
+          <input type="email" name="email" id="email" placeholder="Enter your email">
+          <br>
+          <button type="submit" name="button" id="submitBtn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Salman Parkar | copyright 2019 &copy;</p>
+    </footer>
+
+    <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBQWpd6P7RuTMZEshIrcPqCJnQ0NCysGZU",
+    authDomain: "subscription-slmn.firebaseapp.com",
+    databaseURL: "https://subscription-slmn.firebaseio.com",
+    projectId: "subscription-slmn",
+    storageBucket: "subscription-slmn.appspot.com",
+    messagingSenderId: "30225066557",
+    appId: "1:30225066557:web:0f201278bebcc3afd4d854",
+    measurementId: "G-KDPEX4645C"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
+<script type="text/javascript">
+  var submitForm = document.getElementById('submitForm');
+  submitForm.addEventListener('submit', formSubmit)
+  function formSubmit(e){
+    e.preventDefault();
+    var email = document.getElementById('email').value;
+    var subscribeInDatabase = firebase.database().ref('Emails');
+    subscribeInDatabase.push().set({
+      email:email,
+    })
+    submitForm.reset()
+  }
+</script>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
+
+̥
+
+
+̥
+̥
